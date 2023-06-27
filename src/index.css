@@ -7,6 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app-container {
+  padding: 50px;
+  text-align: center;
+}
+
+.video__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+}
+
+.video__footer {
+  margin: auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
