@@ -22,6 +22,8 @@ export const App = () => {
         })();
     }, [currentChannelId]);
 
+    
+
  //   console.log(currentVideo);
 
     
@@ -33,13 +35,30 @@ export const App = () => {
             <div>
                 <img src={latestvideos} alt="Latest Videos!" height="100" width="300"></img>
                 </div>
-            <div className='video-responsive'>
+            <div class="iframe_container">
                 <iframe
-                    width="853"
+                  class="iframe"
+                  src="https://www.tiktok.com/embed/7262609693506391314"
+                  allowfullscreen
+                  scrolling="no"
+                  allow="encrypted-media;"
+                ></iframe>
+            </div>
+            <div class='tiktok-feed' data-embed-id='175036'>
+            <iframe width="900" height="1600" src="https://rss.app/embed/v1/wall/TxY9KdJERbbBPpup" frameborder="0"></iframe>
+                    </div>    
+        </div>
+)};
+
+/* youtube video code
+
+<div className='video-responsive'>
+                <iframe
+                    width="100%"
                     height="480"
                     src={`https://www.youtube.com/embed/${currentVideo}`}
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 />
             </div>
             <div className="videos">
@@ -58,5 +77,5 @@ export const App = () => {
                 ))
                 }
             </div>
-        </div>
-)};
+
+*/
